@@ -1,5 +1,7 @@
-TypeScript Hello World Demo
+TypeScript Typed Validator "arktype" Demo
 ===========================
+
+arktype的特点是内置了parser，允许我们以字符串的形式并按typescript的写法来写定义，学习成本低。
 
 ```
 npm install
