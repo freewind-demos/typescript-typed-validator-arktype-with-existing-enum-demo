@@ -1,19 +1,20 @@
 import { type } from 'arktype';
 
+enum Gender {
+    Male = 1,
+    Female = 2
+}
+
 const user = type({
     username: "string|number",
+    'gender?': `${Gender.Male}|${Gender.Female}`
 })
-
-console.log({ user, def: user.definition });
 
 type User = typeof user.infer;
 
 const user1: User = {
-    username: 'Freewind'
+    username: 'Freewind',
+    gender: Gender.Male
 }
-const user2: User = {
-    username: 111
-}
-
-const result = user({ username: true });
+const result = user({ username: true, gender: 'x' });
 console.log(JSON.stringify(result, null, 4));

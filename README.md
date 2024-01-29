@@ -1,20 +1,9 @@
-TypeScript Typed Validator "arktype" Demo
+TypeScript Typed Validator "arktype" with Existing Enums Demo
 ===========================
 
-arktype的特点是内置了parser，允许我们以字符串的形式并按typescript的写法来写定义，学习成本低。
+必须用enum的值拼出来一个字符串传给arktype。不知道有没有更好的做法。
 
 ```
 npm install
-npm run demo
+npm start
 ```
-
-Note:
-
-`esModuleInterop` is recommended to set to `true`,
-since we can have consistent importing syntax with babel,
-always use:
-
-```
-import some from 'some'
-```
-
