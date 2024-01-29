@@ -15,4 +15,5 @@ const user2: User = {
     username: 111
 }
 
-console.log(user({ username: true }))
+const result = user({ username: true });
+console.log(JSON.stringify(result, null, 4));
